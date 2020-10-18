@@ -1,0 +1,109 @@
+{{ define "main" }}
+
+<section class="marb_d">
+	<div class="home-hero tac">
+		<div class="home-hero__content">
+			<h1>{{ .Params.heroHeading }}</h1>
+			<h2>{{ .Params.heroSubHeading }}</h2>
+		</div>
+	<div class="home-hero__image-wrap"></div>
+	</div>
+</section>
+<div class="container">
+	<section class="col-md-12">
+		<div class="home-intro standard-width--reading padb_d">
+			<h2 class="tac">Welcome to The Spinney</h2> 
+			{{ .Content }}
+			<div class="tac marb_d">Phil + Maria</div>
+
+		</div>
+	</section>
+</div>
+
+<section class="band pad_d marb_d">
+	<h2 class="tac">Find Us On</h2>
+	<div class="cta__booking flex">	
+		<div>
+			<a href="{{ .Site.Params.airbnbLink }}" target="_blank" class="booking-link">
+				<img src="/images/airbnb.svg" alt="Book through AirBnb" />
+			</a>
+		</div>
+		<div>
+			<a href="{{ .Site.Params.bookingLink }}" target="_blank" class="booking-link">	
+				<img src="/images/bookingcom.svg" alt="Book through Booking.com" />
+			</a>
+		</div>
+
+</section>
+	
+<section class="container marb_d">
+	<section class="col-md-12">
+		<div class="home-rooms">
+			<h2 class="tac">Our Rooms</h2>
+
+			<div class="col-md-4">
+				<div class="home-rooms__room">
+					<img src="/images/home/superior-thumb.jpg" loading=lazy />
+					<a class="home-rooms__room-title" href="/rooms/superior">
+						<span>The Superior</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="home-rooms__room">
+					<img src="/images/home/deluxe-thumb.jpg" loading=lazy />
+					<a class="home-rooms__room-title" href="/rooms/deluxe">
+						<span>The Deluxe</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="home-rooms__room">
+					<img src="/images/home/signature-thumb.jpg" loading=lazy />
+					<a class="home-rooms__room-title" href="/rooms/signature">
+						<span>The Signature</span>
+					</a>
+				</a>
+			</div>
+
+		</div>
+	</section>
+</section>
+
+<section class="band">
+	<div class="container">
+		<div class="col-md-4">
+			<h2>Where To Find Us</h2>
+			<div class="marb_d">
+				<h3>Our Address</h3>
+				The Spinney<br />
+				Weston lane<br />
+				Weston under Wetherley<br />
+				Leamington Spa<br />
+				CV33 9BT<br />
+				United Kingdom
+			</div>
+
+			<div class="marb_d">
+				<h3>By Car</h3>
+				<p>Get off the M40 at J15 and take the A46 towards Coventry. Leave the A46 at the Stoneleigh junction and take the Stoneleigh road towards Stoneleigh. After passing through Stonleigh and crossing the bridge, turn right onto the Coventry Road. Follow this road for a mile until you reach a junction where you should turn left onto the A445. After about 500 meters you will reach a junction to Weston Lane on the right. Turn right at this junction and after a while you will find the Spinney on the left.</p>
+			</div>
+
+			<div class="marb_d">
+				<h3>By Train</h3>
+				<p>Our nearest train stations are Leamington Spa and Coventry.</p>
+			</div>
+		</div>
+
+		<div class="col-md-8">
+			<div class="pad_d">
+				<div class="iframe-outer">
+					<iframe class="iframe-inner" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39009.76880803886!2d-1.5000280619076545!3d52.33214053336089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDE5JzU1LjciTiAxwrAyNyc1NC4wIlc!5e0!3m2!1sen!2suk!4v1598998931626!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+</section>
+</div>
+{{ end }}

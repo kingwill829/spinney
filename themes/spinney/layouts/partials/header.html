@@ -1,0 +1,40 @@
+	<header id="masthead" class="masthead--default {{ if .Params.fixedHeader }}masthead--home{{ end }} marb_d">
+		<div class="masthead__outer">
+			<div id="siteLogo" class="masthead__logo">
+				<a href="{{ "/" | relURL}}">
+					<img src="{{ if .Params.fixedHeader }}/images/logo/logo-white.png{{ else}} /images/logo/logo-black.png{{ end }}" alt="The Spinney Logo" />
+				</a>
+			</div>
+
+			<div class="masthead__nav">
+			    <div class="mobile-nav__icon">
+			      <div class="mobile-nav__icon-inner">
+			        <span></span>
+			        <span></span>
+			        <span></span>
+			        <span></span>
+			      </div>  
+			    </div> 
+				<nav class="main-nav">
+					<ul>
+					    {{ range .Site.Menus.main }}
+					        <li>
+					            <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+					        </li>
+					    {{ end }}
+					    <li class="main-nav--logo-link">
+					    	<a href="{{ .Site.Params.bookingLink }}" class="booking-link" target="_blank">
+					    		<img  width="150" src="/images/bookingcom.svg" alt="Book through Booking.com" />
+					    	</a>
+					    </li>
+					    <li class="main-nav--logo-link">
+					    	<a href="{{ .Site.Params.airbnbLink }}" class="booking-link" target="_blank">
+					    		<img  width="150" src="/images/airbnb.svg" alt="Book through AirBnb" />
+					    	</a>
+					   </li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</header>

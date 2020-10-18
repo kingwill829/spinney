@@ -1,0 +1,63 @@
+{{ define "main" }}
+
+
+<section class="">
+	<div class="hero-banner tac">
+		<div class="hero-banner__content">
+			<h1>The {{ .Title }}</h1>
+		</div>
+	<div class="hero-banner__image-wrap" style="
+		    background:linear-gradient(to right, rgba(64,18,18,0.5), rgba(64,18,18,0.1), rgba(64,18,18,0.5)), url('{{ .Params.heroBanner }}');
+		    background-size:cover;
+		    background-position: center;">
+	</div>
+	</div>
+</section>
+
+<div class="container">
+	<div class="col-md-6">
+		<div>
+			<h3 class="tac">Room Gallery</h3>
+			<div class="room-images">
+				<div class="slick-prev slick-buttons"><i class="fas fa-arrow-circle-left"></i></div>
+				<div class="room-images__thumbs-holder">
+					<div class="room-images__thumbs">
+						{{ range .Params.roomImages}}
+						<div>
+						    <img src="{{.}}" />
+						</div>
+						{{ end }}
+					</div>
+				</div>
+				<div class="slick-next slick-buttons"><i class="fas fa-arrow-circle-right"></i></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<h1>The {{ .Title }}</h1>
+		{{ .Content }}
+
+		<div class="room__details marb_d">
+			<h2>Room Features/Amenities</h2>
+			<ul>	
+				{{ range .Params.roomFeatures}}
+					<li>{{.}}</li>
+				{{ end }}
+			</ul>
+		</div>
+
+		<div class="room__book">
+			<h2 class="tac">Book This Room Today</h2>
+			<div class="room__book-buttons">
+				<a href="{{ .Site.Params.airbnbLink }}" class="room__book-button booking-link" target="_blank">
+					<img src="/images/airbnb.svg" alt="Book through AirBnb" />
+				</a>
+				<a href="{{ .Site.Params.bookingLink }}" class="room__book-button booking-link" target="_blank">	
+					<img src="/images/bookingcom.svg" alt="Book through Booking.com" />
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+{{ end }}

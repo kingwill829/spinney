@@ -1,0 +1,99 @@
+/* images */
+img {
+	max-width:100%;
+	height:auto;
+	vertical-align:bottom;
+}
+
+.image--circle {
+	border-radius:50%;
+}
+
+
+/* Text Align */
+.tac {text-align:center;}
+
+/* Margins */
+.marb_d {margin-bottom:$baseline;}
+.mart_d {margin-top:$baseline;}
+.marb_h {margin-bottom:$baseline / 2;}
+.marb_2 {margin-bottom:$baseline * 2;}
+
+/* Paddings */
+.pad_d {padding:$baseline;}
+.padb_d {padding-bottom:$baseline;}
+.padb_h {padding-bottom:$baseline / 2;}
+.padt_d {padding-top:$baseline;}
+.padt_2 {padding-top:$baseline * 2;}
+
+/* Show / Hide */
+
+
+/* Display */
+.dbl {display:block;}
+.dibl {display:inline-block;}
+.dil {display:inline;}
+
+/* Colours */
+
+.red {color:red;}
+.red--dark {color:red;}
+.white {color:white;}
+
+.green {color:green;}
+
+.bg--red {background-color:red;}
+.gradient--brand {
+	background-image: linear-gradient(to right, red , red);
+	color:white;
+}
+
+
+/* Widths */
+.standard-width, .standard-width--reading {
+	width:90%;
+	margin:0 auto;
+}
+
+@include media_query('tablet') {
+	.standard-width {
+		width:80%;
+	}
+	.standard-width--reading {
+		width:60%;
+	}
+}
+
+/* iframes */
+.iframe-outer {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */	
+}
+.iframe-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;	
+}
+
+
+/* flex */
+.flex {
+	display:flex;
+}
+
+.flex--column {
+	flex-direction:column;
+	justify-content: center;
+}
+
+/* Buttons */
+.booking-link:hover {
+	opacity:0.8;
+}
+

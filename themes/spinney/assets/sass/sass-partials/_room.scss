@@ -1,0 +1,37 @@
+.room-images {
+	display:flex;
+	justify-content: space-between;
+}
+.room-images__thumbs-holder {
+	width:80%;
+}
+.room-images__thumbs img {
+	max-height:500px;
+}
+.slick-buttons {
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+}
+.slick-buttons:hover {
+	cursor:pointer;
+}
+.room__details ul {
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;	
+}
+.room__book {
+	background-color:#f5f5f5;
+	padding:$baseline/2;
+}
+.room__book-buttons {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.room__book-button {
+	padding:$baseline/2;
+	display:inline-block;
+	width:40%;
+}

@@ -1,0 +1,41 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+	<title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{else}}Warwickshire Luxury Homestead | {{ end }}{{ .Site.Title }}</title>
+	<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }} ">
+
+	<link rel="canonical" href="{{ .Permalink }}" />
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="/js/site.js"></script>
+	<script src="/js/slick.min.js"></script>
+
+	<META NAME="robots" CONTENT="noindex,follow">
+
+
+	{{ $style := resources.Get "sass/main.scss" | toCSS  | minify | fingerprint }}
+
+	<link rel="stylesheet" href="{{ $style.Permalink }}" />
+
+
+
+	{{ template "_internal/opengraph.html" . }}
+	{{ template "_internal/twitter_cards.html" . }}
+
+
+
+	{{ if not (in (string .Site.BaseURL) "localhost") }}
+	    {{ template "_internal/google_analytics_async.html" . }}
+	{{ end }}
+
+	{{ if and (eq .Section "recipes") (eq .Kind "page")}}
+		{{ partial "recipe-schema.html" .}}
+	{{ end }}
+
+</head>

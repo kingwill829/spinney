@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="container">
+	<div class="standard-width--reading">
+		<h1 class="tac">{{ .Title }}</h1>
+		<div class="contact-form">
+			<form action="https://getform.io/f/cad63f13-ebb3-401e-aadc-820bd13fa63b" method="POST">
+				<div class="marb_h">	
+					<label class="dbl">Name</label>
+				    <input type="text" name="name">
+				</div>
+				<div class="marb_h">
+					<label class="dbl">Email Address</label>
+			 		<input type="email" name="email">
+			  	</div>	
+			 	<div class="marb_h">
+			 		<label class="dbl">Message</label>	
+			  		<input type="text" name="message">
+			  	</div>
+			  	<div>
+			 		<button type="submit">Send</button>
+			 	</div>
+
+			</form>
+		</div>
+	</div>
+</div>
+{{ end }}
