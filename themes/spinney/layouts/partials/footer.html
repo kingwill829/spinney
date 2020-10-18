@@ -1,31 +1,60 @@
 <footer class="mart_d">
 	<div class="footer marb_d">
-		<div class="footer__block">
-			<h3>Our Address</h3>
-			The Spinney<br />
-			Weston lane<br />
-			Weston under Wetherley<br />
-			Leamington Spa<br />
-			CV33 9BT<br />
-			United Kingdom
+		<div class="footer__logo">
+		
+				<img src="/images/logo/logo-black.png" alt="Spinney footer logo" />
+			
 		</div>
-		<div class="footer__block">
-			<h3>Navigation</h3>
-			<ul>
-				<li><a href="/contact/">Contact</a></li>
-				<li><a href="{{ .Site.Params.bookingLink }}">Find Us On Booking.com</a></li>
-				<li><a href="{{ .Site.Params.airbnbLink }}">Find us on AirBnB</a></li>
-			</ul>
-		</div>
-
-		<div class="footer__block">
-			<div class="tac">
-				<img src="/images/home/booking-badge.png" />
+		<div class="container">
+			<div class="col-md-3">
+				<div class="footer__block">
+					<h3>Contact</h3>
+					<ul>
+						<li>
+							<a href="#"><i class="fas fa-phone"></i> 01926 418726</a>
+						</li>
+						<li>
+							<a href="mailto:"><i class="fas fa fa-envelope"></i> 01926 418726</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<div class="footer__block">
-			<div class="tac">
-				<img src="/images/logo/logo-black.png" alt="The Spinney Logo" />
+			<div class="col-md-3">
+				<div class="footer__block">
+					<h3>Our Address</h3>
+					The Spinney<br />
+					Weston lane<br />
+					Weston under Wetherley<br />
+					Leamington Spa<br />
+					CV33 9BT<br />
+					United Kingdom
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer__block">
+					<h3>Book</h3>
+					<ul>
+						<li><a href="/contact/">Contact</a></li>
+					    <li>
+					    	<a href="{{ .Site.Params.bookingLink }}" class="booking-link" target="_blank">
+					    		<img  width="150" src="/images/bookingcom.svg" alt="Book through Booking.com" />
+					    	</a>
+					    </li>
+					    <li>
+					    	<a href="{{ .Site.Params.airbnbLink }}" class="booking-link" target="_blank">
+					    		<img  width="150" src="/images/airbnb.svg" alt="Book through AirBnb" />
+					    	</a>
+					   </li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer__block footer__block-booking-award tac">
+					<h3>Awards</h3>
+					<div class="tac">
+						<img src="/images/home/booking-badge.png" />
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
