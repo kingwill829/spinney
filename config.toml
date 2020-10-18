@@ -1,4 +1,4 @@
-baseURL = "https://thespinney.com/"
+baseURL = "/"
 languageCode = "en-gb"
 title = "The Spinney"
 theme = "spinney"
