@@ -15,3 +15,6 @@ roomImages: ["deluxe-1.jpg","deluxe-2.jpg","deluxe-3.jpg","deluxe-4.jpg","deluxe
 roomFeatures: ["Free Parking","Free Wifi","Tea/Coffee Making Facilities","Hairdryer","Lock on Bedroom Door","TV","Wardrope Hangers","Heated Rooms","Balcony","Lake View","Free Toiletries","Towels","Bed Linen","Non-Smoking","Terrace","Patio","Private Bathroom"]
 
 ---
+
+
+Room description will go here

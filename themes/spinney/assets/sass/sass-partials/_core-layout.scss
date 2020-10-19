@@ -1,5 +1,8 @@
 .band {
-	background-color:#f5f5f5;
+	background-color:$grey;
+  h2 {
+    margin-top:0px;
+  }
 }
 .band__cta {
 	width:300px;
@@ -47,7 +50,3 @@
 /*  ---  End Hero Banner */
 
 
-footer {
-	background-color:#f5f5f5;
-	padding:$baseline;
-}

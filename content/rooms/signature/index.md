@@ -15,5 +15,4 @@ roomImages: ["signature-8.jpg","signature-1.jpg","signature-2.jpg","signature-3.
 roomFeatures: ["Wifi","TV","Hairdryer","Kettle/Tea Making Facilities"]
 ---
 
-## Heading 2
-Here is the content
+Room description will go here

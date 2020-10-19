@@ -15,3 +15,5 @@ roomImages: ["superior-1.jpg","superior-2.jpg","superior-3.jpg","superior-4.jpg"
 roomFeatures: ["Wifi","TV","Hairdryer","Kettle/Tea Making Facilities"]
 
 ---
+
+Room description will go here
