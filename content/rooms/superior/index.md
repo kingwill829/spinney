@@ -10,7 +10,7 @@ description: "Enter meta description here"
 
 heroBanner: "superior-hero.jpg"
 
-roomImages: ["superior-1.jpg","superior-2.jpg","superior-3.jpg","superior-4.jpg","superior-5.jpg","superior-6.jpg","superior-7.jpg","superior-8.jpg","superior-9.jpg","superior-10.jpg","superior-11.jpg","superior-12.jpg","superior-13.jpg","superior-14.jpg","superior-15.jpg","superior-16.jpg"]
+roomImages: ["superior-1","superior-2","superior-3","superior-4","superior-5","superior-6","superior-7","superior-8","superior-9","superior-10","superior-11","superior-12","superior-13","superior-14","superior-15","superior-16"]
 
 roomFeatures: ["Wifi","TV","Hairdryer","Kettle/Tea Making Facilities"]
 
