@@ -17,4 +17,8 @@ roomFeatures: ["Free Parking","Free Wifi","Tea/Coffee Making Facilities","Hairdr
 ---
 
 
-Room description will go here
+This popular suite sits on the 2nd floor with a push-open Cabrio balcony allowing the outside into your suite. It provides panoramic views over the small lake and surrounding countryside. The Deluxe has its own unique experience and includes a walk-in wet room conveniently situated next to the well dressed double bed.
+
+The suite contains a small fridge and you’ll enjoy features such as self-serve complimentary cereal dispensers, coffee and tea making facilities, and private seating areas within the comfort of your own suite.
+
+Truly a stay to remember, a hidden gem.

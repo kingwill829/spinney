@@ -10,6 +10,9 @@ button {
 	height:48px;
 }
 
+.contact-form__message {
+	min-height:200px;
+}
 .contact-form .send-button {
 	background-color:$red;
 	color:white;
