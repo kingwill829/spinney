@@ -11,5 +11,8 @@ theme = "spinney"
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
-
+  [[menu.main]]
+    identifier = "gallery"
+    name = "Gallery"
+    url = "/gallery/"
 
