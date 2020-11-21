@@ -2,6 +2,7 @@ baseURL = "https://thespinneyhomestay.co.uk/"
 languageCode = "en-gb"
 title = "The Spinney"
 theme = "spinney"
+googleAnalytics = "UA-183745030-1"
 [params]
   bookingLink = "https://www.booking.com/hotel/gb/the-spinney-leamington-spa.en-gb.html"
   airbnbLink = "https://www.airbnb.co.uk/rooms/29297535"
