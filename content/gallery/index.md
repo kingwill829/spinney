@@ -4,7 +4,7 @@ date: 2020-08-10T23:32:30+01:00
 
 draft: false
 
-description: "Enter meta description here"
+description: "View our gallery featuring images of The Spinney"
 
 type: "gallery" 
 
@@ -14,4 +14,3 @@ galleryImages: ["gallery-1","gallery-2","gallery-3","gallery-4","gallery-5","gal
 ---
 
 
-test content for sdfwfthe about page

@@ -2,7 +2,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-	<title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{else}}Warwickshire Luxury Homestead | {{ end }}{{ .Site.Title }}</title>
+	<title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{else}}Warwickshire Luxury Homestay | {{ end }}{{ .Site.Title }}</title>
 	<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }} ">
 
 	<link rel="canonical" href="{{ .Permalink }}" />
@@ -16,7 +16,28 @@
 	<script src="/js/site.js"></script>
 	<script src="/js/slick.min.js"></script>
 
-	<META NAME="robots" CONTENT="noindex,follow">
+	{{ if .IsHome }}
+
+
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Organization",
+	  "name": "The Spinney",
+	  "url": "https://www.thespinneyhomestay.co.uk/",
+	  "logo": "https://www.thespinneyhomestay.co.uk/images/logo/logo-black.png",
+	  "contactPoint": {
+	    "@type": "ContactPoint",
+	    "telephone": "07889792632",
+	    "contactType": "customer service",
+	    "areaServed": "GB",
+	    "availableLanguage": "en"
+	  }
+	}
+	
+	</script>	
+	{{ end }}
+
 
 
 	{{ $style := resources.Get "sass/main.scss" | toCSS  | minify | fingerprint }}
