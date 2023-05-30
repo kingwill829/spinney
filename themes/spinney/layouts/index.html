@@ -24,11 +24,6 @@
 	<h2 class="tac">Find Us On</h2>
 	<div class="cta__booking flex">	
 		<div>
-			<a href="{{ .Site.Params.airbnbLink }}" target="_blank" class="booking-link">
-				<img src="/images/airbnb.svg" alt="Book through AirBnb" />
-			</a>
-		</div>
-		<div>
 			<a href="{{ .Site.Params.bookingLink }}" target="_blank" class="booking-link">	
 				<img src="/images/bookingcom.svg" alt="Book through Booking.com" />
 			</a>
@@ -41,7 +36,7 @@
 		<div class="home-rooms">
 			<h2 class="tac">Our Rooms</h2>
 
-			<div class="col-md-4">
+			<div class="col-md-6">
 				<div class="home-rooms__room marb_d">
 					<picture>
 						  <source srcset="/images/home/superior-thumb.webp" type="image/webp">
@@ -54,7 +49,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-6">
 				<div class="home-rooms__room marb_d">
 					<picture>
 						  <source srcset="/images/home/deluxe-thumb.webp" type="image/webp">
@@ -66,7 +61,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-6">
 				<div class="home-rooms__room marb_d">
 					<picture>
 						  <source srcset="/images/home/signature-thumb.webp" type="image/webp">
@@ -75,6 +70,19 @@
 					</picture>
 					<a class="home-rooms__room-title" href="/rooms/signature">
 						<span>The Signature</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="home-rooms__room marb_d">
+					<picture>
+						  <source srcset="/images/home/hideaway-thumb.webp" type="image/webp">
+						  <source srcset="/images/home/hideaway-thumb.jpg" type="image/jpeg">
+						  <img src="/images/home/hideaway-thumb.jpg" loading=lazy alt="The hideaway" />				
+					</picture>
+					<a class="home-rooms__room-title" href="/rooms/hideaway-lodge">
+						<span>Hideaway Lodge</span>
 					</a>
 				</div>
 			</div>
